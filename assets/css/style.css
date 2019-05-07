@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+::selection { 
+    background:gainsboro; 
+    color: white; 
+}
+
+body {
+  background: rgb(174,238,174);
+  background: linear-gradient(270deg, rgba(174,238,174,1) 0%, rgba(124,189,80,1) 100%);
+}
+
+#widget {
+  opacity: 0;
+}
+
+#weather {
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 1s;
+  height: 210px;
+}
+
+#weather-icon {
+  position: relative;
+  top: 0;
+}
+
+#nav {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: -5px;
+}
+
+.tab {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 13px;
+  height: 70%;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s linear;
+}
+
+.tab i {
+  font-size: 1.1em;
+}
+
+.tab p {
+  overflow: hidden;
+  max-width: 0;
+  padding-top:13px;
+  padding-left: 7px;
+}
+
+.tab.active p {
+  font-weight: 620;
+  font-style: italic;
+  max-width: 200px;
+  transition: max-width 0.4s linear;
+}
+
+.tab.active.green, .tab.green i:hover {
+  color: rgb(60, 128, 15);
+}
+
+.tab.active.green:hover {
+  background-color: rgba(118, 185, 73, 0.1);
+}
+
+.tab.active.pink, .tab.pink i:hover{
+  color: rgba(201, 55, 157, 1);
+}
+
+.tab.active.pink:hover {
+  background-color: rgba(201, 55, 157, 0.2);
+}
+
+.tab.active.yellow, .tab.yellow i:hover{
+  color: rgba(230, 169, 25, 1);
+}
+
+.tab.active.yellow:hover {
+  background-color: rgba(230, 169, 25, 0.2);
+}
+
+
+/* displaying the grid 
+.row,.col,.tab {
+  outline: 1px dotted rgba(0, 0, 0, 0.25);
+}
+*/
