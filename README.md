@@ -5,6 +5,11 @@ Entering city name displays name, date, temperature, weather condition and appro
 Navigation at bottom allows picking today, tommorow, or day after tommorow.
 
 ---
+![alt text](https://github.com/ltatarev/screenshots/blob/master/3dayweather/3wa_screen1.png "3wa_screen1")
+![alt text](https://github.com/ltatarev/screenshots/blob/master/3dayweather/3wa_screen2.png "3wa_screen2")
+![alt text](https://github.com/ltatarev/screenshots/blob/master/3dayweather/3wa_screen3.png "3wa_screen3")
+
+---
 
 ##### Dependencies:
 
