@@ -89,6 +89,7 @@ var widget = document.getElementById("widget");
 $("#search").on("keyup", event => {
   if (event.key === "Enter") {
     if ($("#search").val() != "") {
+      newSearch();
       weather($("#search").val());
       // reset input field
       $("#search").val("");
@@ -98,7 +99,8 @@ $("#search").on("keyup", event => {
 // After pressing submit on (non-empty) search
 $("#submit").on("click", event => {
   if ($("#search").val() != "") {
-    console.log($("#search").val());
+    newSearch();
+    //console.log($("#search").val());
     weather($("#search").val());
     $("#search").val("");
   }
@@ -123,13 +125,7 @@ tabs.forEach(clickedTab => {
 
     let clickedBGColor = getComputedStyle(clickedTab).getPropertyValue("color");
 
-    // adding improvised hover effect for weather-icon
-    $("#weather-icon").on("mouseenter", () => {
-      $("#weather-icon").css("color", clickedBGColor);
-    });
-    $("#weather-icon").on("mouseleave", () => {
-      $("#weather-icon").css("color", "black");
-    });
+    iconHover(clickedBGColor);
 
     // changing background
     switch (clickedBGColor) {
@@ -148,3 +144,29 @@ tabs.forEach(clickedTab => {
     }
   });
 });
+
+function newSearch(){
+  // hard reseting active tabs after search
+  const tabs = document.querySelectorAll(".tab");
+  
+  tabs.forEach(tab => {
+    tab.classList.remove("active");
+  });
+
+  let tab = document.querySelector(".tab");
+  tab.classList.add("active");
+
+  iconHover("rgb(60, 128, 15)");
+  document.body.style.background = "linear-gradient(270deg, rgba(174,238,174,1) 0%, rgba(124,189,80,1) 100%)";
+
+};
+
+function iconHover(color){
+  // adding improvised hover effect for weather-icon
+  $("#weather-icon").on("mouseenter", () => {
+    $("#weather-icon").css("color", color);
+  });
+  $("#weather-icon").on("mouseleave", () => {
+    $("#weather-icon").css("color", "black");
+  });
+}
