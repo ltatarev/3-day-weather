@@ -4,6 +4,8 @@
 Entering city name displays name, date, temperature, weather condition and appropriate weather icon.
 Navigation at bottom allows picking today, tommorow, or day after tommorow.
 
+Live preview at: [threedayweather.herokuapp.com](https://threedayweather.herokuapp.com/)
+
 ---
 ![Screenshot](https://github.com/ltatarev/screenshots/blob/master/3dayweather/3wa_screen1.png "3wa_screen1")
 ![Screenshot](https://github.com/ltatarev/screenshots/blob/master/3dayweather/3wa_screen2.png "3wa_screen2")
