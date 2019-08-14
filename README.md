@@ -7,9 +7,9 @@ Navigation at bottom allows picking today, tommorow, or day after tommorow.
 Live preview at: [threedayweather.herokuapp.com](https://threedayweather.herokuapp.com/)
 
 ---
-![Screenshot](https://github.com/ltatarev/screenshots/blob/master/3dayweather/3wa_screen1.png "3wa_screen1")
-![Screenshot](https://github.com/ltatarev/screenshots/blob/master/3dayweather/3wa_screen2.png "3wa_screen2")
-![Screenshot](https://github.com/ltatarev/screenshots/blob/master/3dayweather/3wa_screen3.png "3wa_screen3")
+![Screenshot](https://i.imgur.com/xrzsyTo.png "3wa_screen1")
+![Screenshot](https://i.imgur.com/lSIk8dW.png "3wa_screen2")
+![Screenshot](https://i.imgur.com/yojoqtG.png "3wa_screen3")
 
 ---
 
